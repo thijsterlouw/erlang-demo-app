@@ -7,5 +7,4 @@ deps
 *.tar.gz
 .project
 erl-project
-rel/release
 priv/extra.config
