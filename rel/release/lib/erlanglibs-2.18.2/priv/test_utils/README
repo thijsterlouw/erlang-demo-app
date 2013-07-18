@@ -1,5 +1,0 @@
-The files contained in this folder are being used by tests, please do not remove them!
-
-a.beam < tests/elibs_application_eunit.erl:104
-b.beam < tests/elibs_application_eunit.erl:105
-dummy.config < tests/elibs_application_eunit.erl:138

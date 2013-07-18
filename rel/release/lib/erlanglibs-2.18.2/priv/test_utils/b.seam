@@ -1,3 +1,0 @@
--module(b).
-
--compile(export_all).
