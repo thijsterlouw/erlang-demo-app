@@ -7,9 +7,9 @@ Simple dummy application that serves as a demo for OpenShift
 Issues
 ======
 
-Openshift is a bit stupid when it comes to deployments: it normally just grabs whatever you pushed to Git, but Erlang code needs to be compiled. For the Java projects they seem to put a ROOT.war in the project. JBOSS seems to include a feature called DeploymentScanner which rechecks if the war file is complete.
-Few possible solutions:
- * in the setup script we actually compile the source (requires erlang + rebar + whatever else) to be pre-installed on the system (ugly)
- * in the setup script download the build artifacts from central storage and install it. When do we trigger this? Must have proper workflow.
- * just commit the Erlang release to git repo. Very ugly, but fine for testing
+OpenShift has two approaches to building in response to pushing to the OpenShift git repo:
+1. the default flow, which executes some scripts locally, but stops the application
+2. the custom-builder-flow, which is currently using Jenkins + Jenkins-client
+
+The 2nd approach is better, we will persue this.
 
