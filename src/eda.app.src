@@ -1,7 +1,7 @@
 {application, eda,
  [
   {description, "Erlang Demo App"},
-  {vsn, git},
+  {vsn, "0.0.0"},
   {registered, []},
   {applications, [
                   kernel,
