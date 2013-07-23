@@ -7,4 +7,5 @@
 %% @end
 %%--------------------------------------------------------------------
 start() ->
-    elibs_application:start(eda).
+    %elibs_application:start(eda).
+    application:start(eda).
